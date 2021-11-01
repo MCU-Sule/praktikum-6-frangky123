@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="author" content="Frangky Hernandez 2172036">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;1,300&display=swap" rel="stylesheet"> 
+</head>
+<style>
+body{
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1300px;
+    font-family: 'Mulish', sans-serif; 
+}
+.judul{
+    text-align: center;
+    color: #000080;
+    font-size: 55px;
+}
+#right{
+    background-color: rgba(220, 221, 225, 0.8);
+    margin-left: 700px;
+    width:400px;
+    height: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.register{
+    text-align: center;
+    font-size: 20px;
+    padding-right: 40px;
+}
+form{
+    text-align: left;
+    padding-left: 50px;
+    font-size: 25px;
+    color: grey;
+}
+input{
+    width: 270px;
+    margin-right: 30px;
+    border: none;
+    background-color: rgba(220, 221, 225, 0.8);
+    outline-width: 0;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid grey;
+    font-size: 20px;
+    color: grey;
+}
+#gender{
+    width: 20px;
+    height: 20px;
+    margin-left: 1px;
+}
+#hobby{
+    width: 20px;
+    height: 20px;
+    margin-left: 1px;
+}
+#Register{
+    background-color: #38ada9;
+    color: white;
+    border-radius: 50px;
+    height: 55px;
+    width: 250px;
+    transition: 0.3s;
+    border: 2px solid #38ada9 ;
+    margin-left: 20px;
+}
+#Register:hover{
+    background-color: rgba(220, 221, 225, 0.8);
+    color:#38ada9 ;
+}
+#left{
+    background-color: rgba(200, 214, 229,0.8);
+    display: flex;
+    flex-direction: row-reverse;
+ padding: 40px;
+    margin-right: 10px; 
+}
+.text{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 70px;
+}
+#email{
+    width: 270px;
+    margin-right: 30px;
+    border: none;
+    background-color: rgba(200, 214, 229,0.8);
+    outline-width: 0;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid grey;
+    font-size: 20px;
+    color: grey;
+}
+#pass{
+    width: 270px;
+    margin-right: 30px;
+    border: none;
+    background-color: rgba(200, 214, 229,0.8);
+    outline-width: 0;
+    box-sizing: border-box;
+    border-bottom: 1.5px solid grey;
+    font-size: 20px;
+    color: grey;
+}
+#Signin{
+    background-color: #2ed573;
+    color: white;
+    border-radius: 50px;
+    height: 55px;
+    width: 230px;
+    transition: 0.3s;
+    border: 2px solid #2ed573;
+    margin-left: 20px;
+}
+#Signin:hover{
+    background-color: rgba(200, 214, 229,0.8);
+    color:#2ed573;
+}
+.frgt{
+    color: blue;
+    text-align: center;
+    font-size:4mm;
+}
+</style>
+<body>
+    <p class="judul">Fill in this form</p>
+    <div id="right">
+    <div class="register">
+        <h1><i><b>Register</b></i></h1><br>
+    <form>
+        Name
+        <input type="text" id="nme" name="nme"><br><br>
+        Email
+        <input type="text" id="mail" name="mail"><br><br>
+        Date of birth
+        <input type="date" id="tgllahir" name="tgllahir" placeholder="dd/mm/yyyy"><br><br>
+        Address
+        <input type="text" id="almt" name="almt"><br><br>
+        Gender <br>
+        <input type="radio" id="gender" name="gender">Male
+        <input type="radio" id="gender" name="gender">Female <br><br>
+        Hobby <br>
+        <input type="checkbox" id="hobby" name="hobby">Singing<br>
+        <input type="checkbox" id="hobby" name="hobby">Playing<br>
+        <input type="checkbox" id="hobby" name="hobby">Ngoding<br><br>
+        
+        <input type="button" value="Register" id="Register">
+        </form>
+    </div>
+        <div id="left">
+        <div class="text">
+            <h1><b><i>Sign in</i></b></h1><br><br>
+        <form>
+        Email
+        <input type="text" id="email" name="email" placeholder="nrp@maranatha.ac.id"><br><br><br>
+        Password
+        <input type="password" id="pass" name="pass"><br><br><br><br><br><br>
+        
+        <input type="button" value="Signin" id="Signin"><br><br>
+        <div class="frgt">forgot password?</div>
+   
+</body>
+</html>
